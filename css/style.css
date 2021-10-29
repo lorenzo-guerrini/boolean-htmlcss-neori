@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 1.5% auto;
+}
+
+#logo, .banner {
+    margin-bottom: 2.5%;
+}
+
+#logo {
+    background-color: #D181E1;
+    height: 100px;
+}
+
+#logo img{
+    height: 50px;
+    border-right: 1px solid #E1E0E2; /**/
+    padding-right: 20px; /**/
+}
+
+nav {
+    margin: 40px 0; /**/
+}
+
+nav li{
+    display: inline;
+    text-transform: uppercase;
+    list-style: none;
+    padding-right: 10px; /**/
+}
+
+nav li a {
+    color: #AAA8AA; /**/
+    font-family: 'Montserrat';
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    position: relative;
+    background-color: #DDD583;
+    height: 300px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover; /* cosa cambia con contain? */
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px; /**/
+}
+
+main {
+    background-color: #437BDF;
+}
+
+#title, .side-section, #main-section {
+    background-color: #B3CDE5;
+}
+
+#title {
+    height: 100px;
+}
+
+.side-section, #main-section {
+    height: 300px;
+    width: 10%;
+    float: left;
+}
+
+.side-section {
+    width: 20%;
+    margin: 1.5% 0;
+}
+
+#main-section {
+    width: 57%;
+    margin: 1.5% 1.5%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #7A27F7;
+    height: 50px;
+    margin-top: 0.5%;
+}
