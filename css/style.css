@@ -10,6 +10,7 @@ a {
     text-decoration: none;
 }
 
+/*Imposta a tutto il testo il font Montserrat*/
 nav li, .banner-text, #title, #title-description, .side-section, #main-section, footer div {
     font-family: "Montserrat";
 }
@@ -36,6 +37,7 @@ nav li {
     padding-right: 1%;
 }
 
+/*Colore e dimensioni testo menu, descrizione titolo e paragrafi*/
 nav li a, #title-description, main p {
     color: #838383;
     font-size: 13px;
@@ -46,6 +48,7 @@ nav li a:hover {
     text-decoration: underline;
 }
 
+/*Overlay semitrasparente da applicare alle immagini con position relative*/
 .dark-overlay:before {
     content: "";
     position: absolute;
@@ -57,6 +60,7 @@ nav li a:hover {
     border-radius: inherit;
 }
 
+/*Immagini che sono impostate come background di div*/
 .background-images {
     background-size: cover;
     background-position: center;
@@ -86,10 +90,6 @@ nav li a:hover {
 .banner p {
     font-size: 14px;
     font-weight: 300;
-}
-
-main {
-
 }
 
 #title {
