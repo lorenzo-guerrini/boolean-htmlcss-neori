@@ -57,15 +57,17 @@ nav li a:hover {
     border-radius: inherit;
 }
 
-.banner {
-    position: relative;
-    margin-bottom: 25px;
-    height: 400px;
-    background-image: url("../img/banner.jpg");
+.background-images {
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    position: relative;
+}
 
+.banner {
+    margin-bottom: 25px;
+    height: 400px;
+    background-image: url("../img/banner.jpg");
 }
 
 .banner-text {
@@ -90,18 +92,13 @@ main {
 
 }
 
-.side-section, #main-section {
-    background-color: #B3CDE5;
-}
-
-
 #title {
     font-size: 30px;
     font-weight: 800;
 }
 
 #title-description {
-
+    margin-bottom: 15px;
 }
 
 .side-section, #main-section {
@@ -119,6 +116,23 @@ main {
 #main-section {
     width: 57%;
     margin: 1.5% 1.5%;
+}
+
+.section-imgs {
+    width: 100%;
+    height: 150px;
+}
+
+#side-section-img-1 {
+    background-image: url("../img/img-1.jpg");
+}
+
+#side-section-img-2 {
+    background-image: url("../img/banner-2.jpg");
+}
+
+#side-section-img-3 {
+    background-image: url("../img/img-3.jpg");
 }
 
 .clearfix::after {
