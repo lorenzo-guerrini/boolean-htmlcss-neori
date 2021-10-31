@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&display=swap');
 
 * {
     margin: 0;
@@ -10,13 +10,13 @@ a {
     text-decoration: none;
 }
 
-nav li, .banner-text, #title {
+nav li, .banner-text, #title, #title-description {
     font-family: "Montserrat";
 }
 
 .container {
     width: 80%;
-    margin: 1.5% auto;
+    margin: 15px auto;
 }
 
 #logo img {
@@ -36,10 +36,10 @@ nav li {
     padding-right: 1%;
 }
 
-nav li a {
+nav li a, #title-description {
     color: #838383;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 nav li a:hover {
@@ -78,23 +78,30 @@ nav li a:hover {
 
 .banner-title {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .banner p {
     font-size: 14px;
+    font-weight: 300;
 }
 
 main {
-    background-color: #437BDF;
+
 }
 
-#title, .side-section, #main-section {
+.side-section, #main-section {
     background-color: #B3CDE5;
 }
 
+
 #title {
-    height: 100px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#title-description {
+
 }
 
 .side-section, #main-section {
