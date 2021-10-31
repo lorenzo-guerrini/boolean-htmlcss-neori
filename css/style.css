@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -10,57 +10,79 @@ a {
     text-decoration: none;
 }
 
+nav li, .banner-text, #title {
+    font-family: "Montserrat";
+}
+
 .container {
     width: 80%;
     margin: 1.5% auto;
 }
 
-#logo, .banner {
-    margin-bottom: 2.5%;
-}
-
-#logo {
-    background-color: #D181E1;
-    height: 100px;
-}
-
-#logo img{
-    height: 50px;
-    border-right: 1px solid #E1E0E2; /**/
-    padding-right: 20px; /**/
+#logo img {
+    width: 150px;
+    border-right: 1px solid #E4E4E5;
+    padding-right: 20px;
 }
 
 nav {
-    margin: 40px 0; /**/
+    margin: 30px 0;
 }
 
-nav li{
+nav li {
     display: inline;
     text-transform: uppercase;
     list-style: none;
-    padding-right: 10px; /**/
+    padding-right: 1%;
 }
 
 nav li a {
-    color: #AAA8AA; /**/
-    font-family: 'Montserrat';
+    color: #838383;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 nav li a:hover {
     text-decoration: underline;
 }
 
+.dark-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: inherit;
+}
+
 .banner {
     position: relative;
-    background-color: #DDD583;
-    height: 300px;
+    margin-bottom: 25px;
+    height: 400px;
     background-image: url("../img/banner.jpg");
-    background-size: cover; /* cosa cambia con contain? */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
 }
 
 .banner-text {
     position: absolute;
-    bottom: 20px; /**/
+    bottom: 10px;
+    padding: 40px;
+    right: 40%;
+    color: white;
+}
+
+.banner-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 14px;
 }
 
 main {
@@ -76,6 +98,7 @@ main {
 }
 
 .side-section, #main-section {
+    position: relative;
     height: 300px;
     width: 10%;
     float: left;
@@ -100,5 +123,5 @@ main {
 footer {
     background-color: #7A27F7;
     height: 50px;
-    margin-top: 0.5%;
+    margin-top: 5px;
 }
