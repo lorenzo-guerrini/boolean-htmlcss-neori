@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-nav li, .banner-text, #title, #title-description, .side-section, #main-section {
+nav li, .banner-text, #title, #title-description, .side-section, #main-section, footer div {
     font-family: "Montserrat";
 }
 
@@ -147,7 +147,15 @@ main {
 }
 
 footer {
-    background-color: #7A27F7;
-    height: 50px;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+footer div {
+    text-align: center;
+    font-size: 13px;
+}
+
+footer div span {
+    color: red;
+    font-size: 20px;
 }
