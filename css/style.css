@@ -72,6 +72,7 @@ nav li a:hover {
     margin-bottom: 25px;
     height: 400px;
     background-image: url("../img/banner.jpg");
+    overflow: hidden;
 }
 
 .banner-text {
