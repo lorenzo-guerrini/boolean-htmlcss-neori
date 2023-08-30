@@ -1,4 +1,4 @@
-# boolean-neori
+# boolean-htmlcss-neori
 
 ![Alt text](/layout.png?raw=true "Layout")
 
