@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&display=swap");
 
+/* Layout */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/*Imposta a tutto il testo il font Montserrat*/
-nav li,
-.banner-text,
-#title,
-#title-description,
-.side-section,
-#main-section,
-footer div {
+body {
   font-family: "Montserrat";
 }
 
@@ -26,37 +22,14 @@ footer div {
   margin: 15px auto;
 }
 
-#logo img {
-  width: 150px;
-  border-right: 1px solid #e4e4e5;
-  padding-right: 20px;
+/* Images */
+.background-images {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
 }
 
-nav {
-  margin: 30px 0;
-}
-
-nav li {
-  display: inline;
-  text-transform: uppercase;
-  list-style: none;
-  padding-right: 1%;
-}
-
-/*Colore e dimensioni testo menu, descrizione titolo e paragrafi*/
-nav li a,
-#title-description,
-main p {
-  color: #838383;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-nav li a:hover {
-  text-decoration: underline;
-}
-
-/*Overlay semitrasparente da applicare alle immagini con position relative*/
 .dark-overlay:before {
   content: "";
   position: absolute;
@@ -68,19 +41,52 @@ nav li a:hover {
   border-radius: inherit;
 }
 
-/*Immagini che sono impostate come background di div*/
-.background-images {
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  position: relative;
+/* Logo */
+#logo img {
+  width: 150px;
+  border-right: 1px solid #e4e4e5;
+  padding-right: 20px;
 }
 
+/* Nav */
+nav {
+  margin: 30px 0;
+}
+
+nav li {
+  display: inline;
+  text-transform: uppercase;
+  list-style: none;
+  padding-right: 1%;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+nav li a,
+#title-description,
+main p {
+  color: #838383;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Banner */
 .banner {
   margin-bottom: 25px;
   height: 400px;
   background-image: url("../img/banner.jpg");
   overflow: hidden;
+}
+
+.banner-title {
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .banner-text {
@@ -91,22 +97,18 @@ nav li a:hover {
   color: white;
 }
 
-.banner-title {
-  font-size: 25px;
-  font-weight: 400;
-}
-
 .banner p {
   font-size: 14px;
   font-weight: 300;
 }
 
-#title {
+/* Main */
+#page-title {
   font-size: 30px;
   font-weight: 800;
 }
 
-#title-description {
+#page-title-description {
   margin-bottom: 15px;
 }
 
@@ -116,14 +118,20 @@ nav li a:hover {
   float: left;
 }
 
+#main-section {
+  width: 57%;
+  margin: 1.5% 1.5%;
+}
+
 .side-section {
   width: 20%;
   margin: 1.5% 0;
 }
 
-#main-section {
-  width: 57%;
-  margin: 1.5% 1.5%;
+.section-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .section-imgs {
@@ -144,18 +152,7 @@ nav li a:hover {
   background-image: url("../img/img-3.jpg");
 }
 
-.main-title {
-  font-size: 13px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Footer */
 footer {
   margin-top: 10px;
 }
@@ -165,7 +162,7 @@ footer div {
   font-size: 13px;
 }
 
-footer div span {
+footer div .icon {
   color: red;
   font-size: 20px;
 }
