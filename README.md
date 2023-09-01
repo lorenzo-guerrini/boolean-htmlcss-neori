@@ -1,4 +1,4 @@
-# boolean-htmlcss-neori
+# boolean-htmlcss-wp
 
 ![Alt text](/layout.png?raw=true "Layout")
 
